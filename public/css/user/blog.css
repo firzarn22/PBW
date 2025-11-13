@@ -1,0 +1,261 @@
+/* BLOG HERO */
+.blog-hero {
+  background-color: var(--platinum);
+  padding: 80px 60px;
+  text-align: center;
+  border-radius: 0 0 100px 0;
+}
+
+.blog-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--puce);
+  margin-bottom: 15px;
+}
+
+.blog-hero-content p {
+  font-size: 18px;
+  color: var(--liver);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* BLOG CONTENT */
+.blog-content {
+  padding: 60px 20px;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FEATURED POST */
+.featured-post {
+  display: flex;
+  margin-bottom: 100px;
+  border-radius: 50px;
+}
+
+.featured-image {
+  flex: 1;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.featured-text {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-text .category {
+  background-color: var(--rosy);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.featured-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--liver);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.featured-text .excerpt {
+  color: var(--wenge);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: var(--rosy);
+}
+
+
+/* BLOG POSTS GRID */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--liver);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.blog-post {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.post-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover .post-image img {
+  transform: scale(1.05);
+}
+
+.post-content {
+  padding: 25px;
+}
+
+.post-content .category {
+  background-color: var(--platinum);
+  color: var(--puce);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.post-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--liver);
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.post-content .excerpt {
+  color: var(--wenge);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.post-content .post-meta {
+  margin-bottom: 0;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter-section {
+  background: linear-gradient(135deg, var(--platinum) 0%, #f0e8e8 100%);
+  padding: 60px 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.newsletter-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--puce);
+  margin-bottom: 15px;
+}
+
+.newsletter-content p {
+  color: var(--liver);
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+
+/* ACTIVE NAV LINK */
+nav a.active {
+  color: var(--puce);
+  font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 968px) {
+  .featured-post {
+    flex-direction: column;
+  }
+  
+  .featured-image, .featured-text {
+    flex: none;
+  }
+  
+  .featured-text {
+    padding: 30px;
+  }
+  
+  .posts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 60px 30px;
+  }
+  
+  .blog-hero-content h1 {
+    font-size: 36px;
+  }
+  
+  .featured-text h2 {
+    font-size: 26px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-content {
+    padding: 40px 15px;
+  }
+  
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-section {
+    padding: 40px 25px;
+  }
+}

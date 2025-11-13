@@ -1,0 +1,456 @@
+:root {
+  --wenge: #654C52;
+  --rosy: #B99099;
+  --platinum: #E8DDDD;
+  --liver: #704A4C;
+  --puce: #762E3F;
+  --white: #ffffff;
+  --black:#0000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white);
+  color: var(--wenge);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--puce);
+}
+
+header nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: var(--liver);
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: var(--puce);
+}
+
+.cart {
+  font-size: 22px;
+  color: var(--wenge);
+}
+
+.cart {
+  text-decoration: none; /* hilangkan garis bawah */
+  color: inherit; /* biar warnanya sama kayak teks sekitarnya */
+}
+
+.cart:hover {
+  text-decoration: none;
+}
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  background-color: var(--platinum);
+  border-radius: 0 0 100px 0;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: var(--liver);
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: var(--puce);
+}
+
+.hero-text p {
+  font-size: 15px;
+  color: var(--rosy);
+  margin-bottom: 20px;
+}
+
+.hero-promo {
+  background-color: var(--puce);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 320px;
+  border-radius: 20px;
+}
+
+.products {
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #f9f9f9;
+}
+
+.products h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  width: 280px;
+  padding: 0;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  display: block;
+}
+
+.product h3, 
+.product p, 
+.product button {
+  margin-top: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.product p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #4b3b3b;
+}
+
+/* QUALITY SECTION */
+.quality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: var(--platinum);
+  border-radius: 60px;
+  margin: 60px auto 40px;
+  max-width: 1200px;
+  gap: 60px; /* Tambahkan gap antara text dan images */
+}
+
+.quality-text {
+  max-width: 45%;
+}
+
+.quality-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--puce);
+  font-size: 2rem; /* Tambahkan ukuran font */
+  margin-bottom: 20px;
+}
+
+.quality-text p {
+  color: var(--liver);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.quality-text button {
+  background-color: var(--puce);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.quality-text button:hover {
+  background-color: #5a252c; /* Darker shade for hover */
+}
+
+.quality-images {
+  display: flex;
+  gap: 20px; /* Jarak antara kedua gambar */
+  max-width: 45%;
+}
+
+.quality-images img {
+  width: 250px; /* Ukuran sama untuk kedua gambar */
+  height: 300px; /* Tinggi sama */
+  border-radius: 20px;
+  object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .quality {
+    flex-direction: column;
+    padding: 50px 40px;
+    gap: 40px;
+  }
+  
+  .quality-text, .quality-images {
+    max-width: 100%;
+  }
+  
+  .quality-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .quality-images img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quality {
+    padding: 30px 20px;
+    border-radius: 40px;
+  }
+  
+  .quality-images img {
+    width: 150px;
+    height: 180px;
+  }
+}
+
+/* BEST SELLING PRODUCTS (setelah quality) */
+.products {
+  text-align: center;
+  padding: 60px 60px 80px; /* ubah: atas dari 80px jadi 60px */
+  background-color: #f9f9f9;
+  margin-top: 0; /* hapus jarak tambahan */
+}
+
+.products h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--liver);
+  font-size: 14px;
+  border-top: 1px solid var(--platinum);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f7f5f5;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ======================= */
+/* DROPDOWN ACCOUNT MENU   */
+/* ======================= */
+.user-menu {
+  position: relative;
+}
+
+.user-menu summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.user-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-initial {
+  width: 32px;
+  height: 32px;
+  background-color: #762E3F;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.12);
+  width: 250px;
+  padding: 25px 20px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.user-menu[open] .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Title "Account" */
+.dropdown h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 10px 0;
+  border-radius: 999px;
+  font-weight: 500;
+  width: 100%;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #5e464b;
+}
+
+.btn.primary {
+  margin-bottom: 14px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-row .btn {
+  flex: 1;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/* Login State */
+body:not(.logged-in) .logged {
+  display: none;
+}
+
+body.logged-in .not-logged {
+  display: none;
+}
+
+/* Remove default marker */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+

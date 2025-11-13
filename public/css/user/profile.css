@@ -1,0 +1,193 @@
+/* === GLOBAL PROFILE PAGE === */
+body.profile-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf8f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HEADER === */
+header {
+  background: #fff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d0a772;
+}
+
+/* === RIGHT ICONS === */
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cart {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* === USER MENU === */
+.user-menu summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.user-initial {
+  background: #d0a772;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.user-menu .dropdown {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.user-menu .dropdown h4 {
+  margin: 0 0 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.user-menu .btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-menu .btn {
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f7f5f3;
+  color: #333;
+  font-weight: 500;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.user-menu .btn:hover {
+  background: #d0a772;
+  color: #fff;
+}
+
+.user-menu .btn.primary {
+  background: #d0a772;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-menu .btn.primary:hover {
+  background: #b88b5b;
+}
+
+/* Active button (Profile on profile page) */
+.user-menu .btn.active {
+  background: #d0a772;
+  color: #fff;
+}
+
+/* === PROFILE MAIN === */
+.profile-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.profile-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #3a2e2e;
+}
+
+/* === PROFILE CARD === */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f0edea;
+  padding: 5px;
+  border: 2px solid #d0a772;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.profile-info strong {
+  color: #555;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+  background: #fff;
+  font-size: 14px;
+  color: #666;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .profile-container {
+    margin: 40px 15px;
+    padding: 25px;
+  }
+}

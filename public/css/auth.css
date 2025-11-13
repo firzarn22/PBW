@@ -1,0 +1,150 @@
+/* ========== LOGIN & REGISTER PAGE (TEMA MAUVE / ROSEWOOD) ========== */
+
+/* === FONT GLOBAL === */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #E8DDDD; /* lembut dan feminin */
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(118, 46, 63, 0.1);
+  width: 340px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: translateY(-4px);
+}
+
+.auth-container h2 {
+  color: #000000; /* warna utama */
+  font-size: 1.6rem;
+  margin-bottom: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* === Form Group === */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #000000; /* lebih hangat */
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #B99099; /* lembut, selaras dengan palet */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #762E3F;
+  box-shadow: 0 0 4px rgba(118, 46, 63, 0.3);
+}
+
+/* === Admin Error Text === */
+#admin-error,
+#login-admin-error {
+  color: #a63946; /* merah gelap lembut */
+  margin-top: 6px;
+  display: none;
+  font-size: 0.9rem;
+}
+
+/* === Tombol === */
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #762E3F; /* utama */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 6px;
+}
+
+.auth-btn:hover {
+  background-color: #654C52;
+  transform: translateY(-1px);
+}
+
+.auth-btn.secondary {
+  background-color: #704A4C;
+  color: #fff;
+}
+
+.auth-btn.secondary:hover {
+  background-color: #B99099;
+}
+
+/* === Footer === */
+.auth-footer {
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: #654C52;
+}
+
+.auth-footer a {
+  color: #762E3F;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-footer a:hover {
+  color: #B99099;
+  text-decoration: underline;
+}
+
+/* === Animasi Muncul Input Admin === */
+#admin-code-group,
+#login-admin-code-group {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsif === */
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px 22px;
+  }
+
+  .auth-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .auth-btn {
+    font-size: 0.95rem;
+  }
+}
