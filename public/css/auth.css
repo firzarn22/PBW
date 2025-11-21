@@ -19,7 +19,7 @@ body {
   padding: 40px 35px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(118, 46, 63, 0.1);
-  width: 340px;
+  width:400px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -65,14 +65,6 @@ body {
   box-shadow: 0 0 4px rgba(118, 46, 63, 0.3);
 }
 
-/* === Admin Error Text === */
-#admin-error,
-#login-admin-error {
-  color: #a63946; /* merah gelap lembut */
-  margin-top: 6px;
-  display: none;
-  font-size: 0.9rem;
-}
 
 /* === Tombol === */
 .auth-btn {
@@ -120,31 +112,4 @@ body {
 .auth-footer a:hover {
   color: #B99099;
   text-decoration: underline;
-}
-
-/* === Animasi Muncul Input Admin === */
-#admin-code-group,
-#login-admin-code-group {
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* === Responsif === */
-@media (max-width: 480px) {
-  .auth-container {
-    width: 90%;
-    padding: 30px 22px;
-  }
-
-  .auth-container h2 {
-    font-size: 1.4rem;
-  }
-
-  .auth-btn {
-    font-size: 0.95rem;
-  }
 }

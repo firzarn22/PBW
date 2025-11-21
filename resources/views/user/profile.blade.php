@@ -5,7 +5,7 @@
   <main class="profile-container">
     <h1>Your Profile</h1>
     <div class="profile-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon" class="profile-avatar">
+      <img src="images/user.jpg" alt="User Icon" class="profile-avatar">
       <div class="profile-info">
         <p><strong>Email:</strong> <span id="profile-email"></span></p>
         <p><strong>Role:</strong> <span id="profile-role"></span></p>

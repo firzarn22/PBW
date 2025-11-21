@@ -135,8 +135,8 @@ header nav a:hover {
   display: block;
 }
 
-.product h3, 
-.product p, 
+.product h3,
+.product p,
 .product button {
   margin-top: 10px;
 }
@@ -244,16 +244,16 @@ header nav a:hover {
     padding: 50px 40px;
     gap: 40px;
   }
-  
+
   .quality-text, .quality-images {
     max-width: 100%;
   }
-  
+
   .quality-images {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .quality-images img {
     width: 200px;
     height: 250px;
@@ -265,7 +265,7 @@ header nav a:hover {
     padding: 30px 20px;
     border-radius: 40px;
   }
-  
+
   .quality-images img {
     width: 150px;
     height: 180px;
@@ -357,9 +357,10 @@ nav a {
 }
 
 .user-icon img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  margin-top: 9px;
 }
 
 .user-initial {
